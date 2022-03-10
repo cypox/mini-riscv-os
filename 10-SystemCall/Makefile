@@ -1,4 +1,5 @@
-CC = riscv64-unknown-elf-gcc
+RISCVPATH=../../gnu-toolchain/riscv64-elf/bin/
+CC = $(RISCVPATH)riscv64-unknown-elf-gcc
 CFLAGS = -I./include -nostdlib -fno-builtin -mcmodel=medany -march=rv32ima -mabi=ilp32 -g -Wall -w -D CONFIG_SYSCALL
 GDB = riscv64-unknown-elf-gdb
 SOURCE = src/
